@@ -10,7 +10,7 @@
 
 const char* ssid = "Amrita-2.4G-C101";
 #define EAP_USERNAME "CB.EN.U4CSE20242"
-#define EAP_PASSWORD "oneplus="
+#define EAP_PASSWORD ""
 
 String serverName = "https://amrita-iot.glitch.me";
 
