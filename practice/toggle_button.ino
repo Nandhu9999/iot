@@ -8,7 +8,7 @@ void setup() {
   Serial.flush();Serial.println("Setup complete!");
   // esp32 start sequence...
   pinMode(2, OUTPUT);digitalWrite(2,HIGH);delay(150);digitalWrite(2,LOW);delay(150);digitalWrite(2,HIGH);delay(150);digitalWrite(2,LOW);
-  
+  //...
   pinMode(BTNPIN, INPUT_PULLUP);
 }
 
