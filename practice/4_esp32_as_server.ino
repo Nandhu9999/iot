@@ -87,7 +87,7 @@ void loop() {
               client.println("<!DOCTYPE html><html>");
               client.println("<body><h1>ESP32 Web Server</h1>");
               client.println("<div id='content'>___</div>");
-              client.println("<script>setInterval( async()=>{ const response = await fetch('/data'); const mydata = await response.json(); update(mydata) }, 500 );");
+              client.println("<script>setInterval( async()=>{ const response = await fetch('/data'); const mydata = await response.json(); update(mydata) }, 1500 );");
               client.println("function update(data){ document.querySelector(\"#content\").innerHTML='temperature ='+data[0]+'<br>pressure='+data[1]+'<br>altitude='+data[2]; }</script>");
               client.println("</body></html>");
               client.println();
