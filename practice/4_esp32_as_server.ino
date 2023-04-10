@@ -12,7 +12,7 @@ Adafruit_BMP280 bme; // I2C
 #include <WiFi.h>
 
 const char* ssid = "OnePlus 8 Pro";
-const char* password = "oneplusequals";
+const char* password = "";
 
 WiFiServer server(80);
 String header; // Variable to store the HTTP request
