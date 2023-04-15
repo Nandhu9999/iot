@@ -66,13 +66,13 @@ void setup() {
 
 void loop() {
   float c, pa, m;
-  c = bme.readTemperature();
+  deg = bme.readTemperature();
   pa = bme.readPressure();
   m = bme.readAltitude(1013.25);
   // Serial.printf("temperature=%f &pressure=%f &altitude=%f", c, pa, m);Serial.println();
   if(WiFi.status()== WL_CONNECTED){
       HTTPClient http;
-      String serverPath = serverName + "/bmp?temperature=" + String(c) + "&pressure=" + String(pa) + "&altitude=" + String(m);
+      String serverPath = serverName + "/bmp?temperature=" + String(deg) + "&pressure=" + String(pa) + "&altitude=" + String(m);
       http.begin(serverPath.c_str());
       int httpResponseCode = http.GET();
       
